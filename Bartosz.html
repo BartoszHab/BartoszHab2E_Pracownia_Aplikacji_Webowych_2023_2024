@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartosz Hablasek</title>
+    <script>
+//zad 1
+let  imie=prompt("Podaj Imie: ");
+alert("Witaj " + imie)
+
+//zad 2
+        let liczba1=prompt("Podaj Pierwsza Liczbe: ");
+        let liczba2=prompt("Podaj Druga Liczbe: ");
+        let operacja=prompt("Wybierz operację:\n1 - dodawanie, 2 - odejmowanie, 3 - mnożenie, 4 - dzielenie");
+        let wynik
+        switch(operacja){
+            case 1:
+                wynik=liczba1+liczba2;
+                break;
+            case 2:
+                wynik=liczba1-liczba2;
+                break;
+            case 3:
+                wynik=liczba1*liczba2;
+                break;
+            case 4:
+                wynik=liczba1/liczba2;
+                break;
+            default:
+                alert("Nieprawidłowy wybór operacji.");
+        }
+        alert("Wynik: " + wynik);
+
+//zad 3
+let wzrost=prompt("Podaj swoj wzrost w cm: ");
+if(wzrost>180){
+    alert("Jestes wysoki ");
+}
+else if(wzrost>165){
+    alert("Jestes Sredni ");
+}
+else{
+    alert("Jestes niski ");
+}
+
+    //zad 5
+        let rokUrodzenia2=prompt("Podaj swoj rok urodzenia:");
+        let obecnyRok2=new Date().getFullYear();
+        let wiek2=obecnyRok2-rokUrodzenia2;
+        if (wiek2 >= 18 ){
+            alert("Jestes pelnoletni");
+        }
+        else{
+            alert("Nie jestes pelnoletni");
+        }
+
+
+</script>
+
+</head>
+<body>
+
+
+</body>
+</html>

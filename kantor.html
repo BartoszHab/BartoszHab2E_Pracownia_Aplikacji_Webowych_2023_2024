@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kantor walut</title>
+<script>
+    function calculate()
+    {
+        var kwota = float(documen.Id("kwota").value);
+        var plnKurs = 1.0;
+        var usdKurs = 4.0;
+        var gbpKurs = 5.0;
+        var eurKurs = 4.3;
+        var chfKurs = 4.4;
+
+        var usdWartosc = kwota * usdKurs
+        var gbpWartosc = kwota * gbpKurs
+        var eurWartosc = kwota * eurKurs
+        var chfWartosc = kwota * chfKurs
+    }
+</script>
+</head>
+<body>
+    <h1>Kantor Walut</h1>
+    <form>
+        <label for="kwota">Kwota w PLN: </label>
+        <input type="number" id="kwota" name="kwota" min="0" onchange="oblicz()">
+    </form>
+    <table>
+        <tr>
+            <th>Waluta</th>
+            <th>Wartosc</th>
+        </tr>
+
+        <tr>
+            <td>USD</td>
+            <td id="usdWartosc"></td>
+        </tr>
+
+        <tr>
+            <td>GBP</td>
+            <td id="gbpWartosc"></td>
+        </tr>
+
+        <tr>
+            <td>EUR</td>
+            <td id="eurWartosc"></td>
+        </tr>
+
+        <tr>
+            <td>CHF</td>
+            <td id="chfWartosc"></td>
+        </tr>
+
+    </table>
+</body>
+</html>
